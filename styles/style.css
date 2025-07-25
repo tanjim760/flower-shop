@@ -2,9 +2,7 @@
     box-sizing: border-box;
 }
 
-img {
-    width: 100%;
-}
+
 
 /* Custom Fonts */
 
@@ -154,7 +152,10 @@ nav {
 .flower-lover{
     margin-top: 240px;
     gap: 60px;
+}
 
+.flower-lover img {
+    width: 100%;
 }
 .flower-lover-title {
     font-size: 3rem;
@@ -179,4 +180,10 @@ nav {
         
         
     }
-}
+    
+    .flower-lover{
+        flex-direction: column;
+        
+    }
+
+}   
