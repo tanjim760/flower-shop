@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+/* Custom Fonts */
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* Shared Styles */
+
+.max-w {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+
+.primary-black {
+    color: black;
+}
+
+.dark2 {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.dark3{
+    color: #8987A1;
+}
+
+.orange {
+    color:#E95A08;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #E95A08;
+    width: 100%;
+    padding: 19px 80px;
+    border: none;
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+}
+
+/* header section styles */
+nav a {
+    text-decoration: none;
+    color: black;
+    margin-left: 48px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 71px;
+    margin-top: 30px;
+}
+
+.home {
+    font-weight: bold;
+    color: rgba(37, 36, 50, 1);
+}
+
+.banner-container {
+    align-items: center;
+    height: 460px;
+    margin-top: 120px;
+}
+
+.banner-details h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.banner-details span {
+    color: #E95A08;
+}
+
+.banner-img img {
+    width: 100%;
+}
+
+/* plants-buy-section-styles */
+
+.plant-card {
+    max-width: 270px;   
+}
+
+.flower-name {
+    font-size: 1.375rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.flower-price {
+    font-size: 1.375rem;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+.plants-container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.plant {
+    width: 100%;
+}
+
+.our-plants {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.add-to-cart {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.our-plants-desc {
+    font-size: 1.375rem;
+    margin-bottom: 50px;
+}
+
+
+/* Flower Store design */
+
+.flower-lover{
+    margin-top: 240px;
+    gap: 60px;
+
+}
+.flower-lover-title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.flower-lover-desc {
+    font-size: 1.375rem;
+
+}
+/* responsive media query */
+@media screen and (max-width: 576px) {
+    .home, .shop, .about {
+        display: none;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+        margin-top: 300px;
+    }
+    .plants-container{
+        grid-template-columns: repeat(2, 1fr);
+        
+        
+    }
+}
