@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+button {
+    cursor: pointer;
+}
+
+
 
 
 /* Custom Fonts */
@@ -104,6 +109,10 @@ nav {
 
 /* plants-buy-section-styles */
 
+.plants-buy-section {
+    margin-top: 120px;
+}
+
 .plant-card {
     max-width: 270px;   
 }
@@ -112,6 +121,7 @@ nav {
     font-size: 1.375rem;
     font-weight: 500;
     margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .flower-price {
@@ -140,6 +150,7 @@ nav {
 .add-to-cart {
     font-size: 1rem;
     font-weight: 600;
+    margin-top: 20px;
 }
 
 .our-plants-desc {
@@ -164,6 +175,7 @@ nav {
 }
 
 .flower-lover-desc {
+    margin-top: 30px;
     font-size: 1.375rem;
 
 }
@@ -179,6 +191,7 @@ nav {
     height: 535px;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 
 .subscribe-section-title {
@@ -188,19 +201,20 @@ nav {
 }
 
 .input-btn-container {
+    max-width: 830px;
     margin-top: 30px;
     height: 50px;
 } 
 
 .input-btn-container input {
-    width: 644px;
+    width: 80%;
     padding: 15px;
     outline: none;
     border: none;
 }
 
 .subscribe-btn {
-    width: 186px;
+    width: 20%;
     background-color: #E95A08;
     color: white;
     border: none;
@@ -208,19 +222,51 @@ nav {
     font-size: 1rem;
 }
 
+/* Footer styles */
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+.footer-links a {
+    text-decoration: none;
+    color: black;
+    color: #8987A1;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.icon-twitter {
+    position: relative;
+    top: -8px;
+}
+
+.social-icons img{
+    margin-left: 32px;
+    cursor: pointer;
+}
+
 /* responsive media query */
 @media screen and (max-width: 576px) {
     .home, .shop, .about {
         display: none;
     }
+
+    .responsive-margin {
+        margin-top: 55px;
+    }
+
     .banner-container{
         flex-direction: column-reverse;
         margin-top: 300px;
     }
     .plants-container{
         grid-template-columns: repeat(2, 1fr);
-        
-        
     }
     
     .flower-lover{
