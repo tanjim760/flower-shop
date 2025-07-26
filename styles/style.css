@@ -229,6 +229,10 @@ nav {
 }
 /* Footer styles */
 
+.newsletter-form-container {
+    display: flex;
+}
+
 footer {
     display: flex;
     justify-content: space-evenly;
