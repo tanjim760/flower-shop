@@ -180,65 +180,72 @@ nav {
 
 }
 
-/* Subscribe section designs */
+
+/* Subscribe section styles */
 
 .subscribe-section {
-    max-width: 1440px;
-    margin: 0 auto;
-    background-image: url("../assets/news-letter-bg.png");
-    margin-top: 200px;
-    background-repeat: no-repeat;
-    height: 535px;
-    align-items: center;
+    display: flex;
     justify-content: center;
-    height: 100vh;
+    align-items: center;
+    max-width: 1440px;
+    height: 533px;
+    margin: 0 auto;
+    margin-top: 120px;
+    text-align: center;
+    background-image: url("../assets/news-letter-bg.png");
 }
 
-.subscribe-section-title {
-    font-size: 3rem;
+.form-title {
     color: white;
-    font-weight: bold;
+    font-size: 3rem;
+}
+.subscribe-btn, input {
+    height: 50px;
+    padding: 19px 52px;
+    border: none;
+    margin-top: 40px;
 }
 
-.input-btn-container {
-    max-width: 830px;
-    margin-top: 30px;
+.subscribe-section input {
+    width: 644px;
+    padding: 0;
+    margin-right: 0;
+    padding-left: 20px;
     height: 50px;
-} 
+    
 
-.input-btn-container input {
-    width: 80%;
-    padding: 15px;
-    outline: none;
-    border: none;
 }
 
 .subscribe-btn {
-    width: 20%;
-    background-color: #E95A08;
-    color: white;
+    display: inline-block;
+    width: 186px;
     border: none;
+    height: 51px;
+    outline: none;
+    color: white;
+    background-color: #E95A08;
+    margin-left: 0;
     font-weight: 600;
-    font-size: 1rem;
 }
-
 /* Footer styles */
 
 footer {
     display: flex;
     justify-content: space-evenly;
+    max-width: 1440px;
+    margin: 0 auto;
     padding: 30px;
+    margin-top: 50px;
 }
 .footer-links a {
     text-decoration: none;
-    color: black;
     color: #8987A1;
 }
 
 .footer-links {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 30px;
 }
 
 .icon-twitter {
