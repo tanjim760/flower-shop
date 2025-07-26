@@ -263,6 +263,7 @@ footer {
 }
 
 /* responsive media query */
+
 @media screen and (max-width: 576px) {
     .home, .shop, .about {
         display: none;
@@ -272,6 +273,14 @@ footer {
         margin-top: 55px;
     }
 
+    nav {
+        padding: 30px;
+    }
+
+    .banner-details, .our-plants, .our-plants-desc, .flower-lover-desc, .flower-lover-title{
+        margin-top: 30px;
+        margin-left: 12px;
+    }
     .banner-container{
         flex-direction: column-reverse;
         margin-top: 300px;
@@ -285,4 +294,32 @@ footer {
         
     }
 
-}   
+    .subscribe-section {
+        max-width: 100%;
+        padding: 30px;
+        ;
+    }
+
+    .newsletter-form-container {
+        max-width: 320px;
+        margin: 0 auto;
+        margin-left: 0;
+    }
+
+    footer {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        margin-bottom: 500px;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    
+
+    
+}
